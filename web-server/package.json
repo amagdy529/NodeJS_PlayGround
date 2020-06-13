@@ -1,14 +1,17 @@
 {
-  "name": "twitter-playground",
+  "name": "web-server",
   "version": "1.0.0",
-  "description": "just a playground for testing and playing with twitter apis",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ahmed Magdy",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "twit": "^2.2.11"
+    "express": "^4.16.4",
+    "handlebars": "^4.7.3",
+    "hbs": "^4.1.0"
   }
 }
