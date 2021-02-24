@@ -12,4 +12,23 @@ module.exports = function (app) {
         .get(todoList.read_a_task)
         .put(todoList.update_a_task)
         .delete(todoList.delete_a_task);
+        
+    app.route('/bears/:bear_id')
+        // .get(todoList.read_a_task)
+        .get(function (req, res) {
+            // res.json("bear");
+            Bear.findById(req.params.bear_id, function (err, bear) {
+                if (err)
+                    res.send(err);
+                res.json(bear);
+            });
+        })
+
 };
+
+
+// router.route('/bears/:bear_id')
+
+
+
+
