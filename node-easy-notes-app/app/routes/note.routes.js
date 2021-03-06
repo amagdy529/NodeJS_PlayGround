@@ -16,3 +16,6 @@ module.exports = (app) => {
     // Delete a Note with noteId
     app.delete('/notes/:noteId', notes.delete);
 }
+
+// Use this Url
+// http://localhost:3000/notes/
